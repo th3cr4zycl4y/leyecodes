@@ -7,6 +7,8 @@ import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import Projects from "./../components/Projects";
 import { sanityClient } from "../lib/sanity.server";
+import Image from "next/image";
+import Link from "next/link";
 
 const projectQuery = `
    *[_type == "project"]{
@@ -89,6 +91,21 @@ export default function Home({ project, pageInfo }) {
           <Contact pageInfo={pageInfo} />
         </section>
       </main>
+      <Link href="#hero">
+        <footer className=" flex items-center justify-center sticky bottom-5 w-full cursor-pointer">
+          <div className="w-10 h-10">
+            <Image
+              className="rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+              src="/images/profile.png"
+              alt="Picture of the author"
+              width="1"
+              height="1"
+              layout="responsive"
+              objectFit="cover"
+            />
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 }
