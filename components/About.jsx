@@ -33,7 +33,7 @@ function About({ pageInfo }) {
             opacity: 1,
           }}
           viewport={{ once: true }}
-          className="w-52 xl:w-[450px] "
+          className="w-52 xl:w-[350px] "
         >
           <Image
             className="flex-shrink-0 rounded-full md:mb-0 md:rounded-lg "

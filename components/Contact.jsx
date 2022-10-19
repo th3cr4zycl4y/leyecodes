@@ -50,7 +50,7 @@ function Contact({ pageInfo }) {
       }}
       className="flex flex-col items-center   h-screen mx-auto max-w-7xl "
     >
-      <h3 className="uppercase tracking-[10px] text-gray-500 py-16 md:py-10 text-2xl">
+      <h3 className="uppercase tracking-[10px] text-gray-500 pt-16 md:pt-5 text-2xl">
         Contact
       </h3>
 
