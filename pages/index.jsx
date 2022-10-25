@@ -71,23 +71,23 @@ export default function Home({ project, pageInfo }) {
       {/* Main */}
       <main className="max-w-7xl mx-auto ">
         {/* Hero */}
-        <section id="hero" className="snap-center">
-          <Hero />
+        <section id="hero">
+          <Hero pageInfo={pageInfo} />
         </section>
         {/* About */}
-        <section id="about" className="snap-center">
+        <section id="about">
           <About pageInfo={pageInfo} />
         </section>
         {/* Skills */}
-        <section id="skills" className="snap-center">
+        <section id="skills">
           <Skills />
         </section>
         {/* Projects */}
-        <section id="projects" className="snap-center">
+        <section id="projects">
           <Projects projects={project} />
         </section>
         {/* Contact */}
-        <section id="contact" className="snap-center">
+        <section id="contact">
           <Contact pageInfo={pageInfo} />
         </section>
       </main>

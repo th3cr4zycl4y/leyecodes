@@ -3,9 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { SocialIcon } from "react-social-icons";
+import { urlFor } from "../lib/sanity";
 
-function Hero() {
-  const [text, count] = useTypewriter({
+function Hero({ pageInfo }) {
+  const [text] = useTypewriter({
     words: [
       `Hi, Am Olabode Olaleye`,
       "I-just-don't-build-website.jsx",
@@ -19,7 +20,7 @@ function Hero() {
     <div className="flex flex-col items-center justify-center h-screen space-y-5 text-center max-w-7xl mx-auto">
       <div>
         <Image
-          src="/images/profile.png"
+          src={urlFor(pageInfo.heroImage).url()}
           alt="profile Picture"
           width="230"
           height="230"

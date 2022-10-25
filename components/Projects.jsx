@@ -6,7 +6,7 @@ import { urlFor } from "../lib/sanity";
 
 function Projects({ projects }) {
   return (
-    <div className="h-screen">
+    <div>
       <motion.div
         initial={{
           opacity: 0,
@@ -23,7 +23,7 @@ function Projects({ projects }) {
           Projects
         </h3>
 
-        <div className=" w-full h-screen flex items-center overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-5 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#3CA7CB]">
+        <div className=" w-full  flex items-center overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-5 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#3CA7CB]">
           {projects.map((project, index) => (
             <div
               className="w-full flex-shrink-0 snap-center flex  flex-col space-y-5 mx-auto   "
@@ -57,14 +57,14 @@ function Projects({ projects }) {
                   transition={{ duration: 1.2 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="w-full space-y-10 md:relative right-24 md:w-[50%] text-right md:space-y-3 flex md:justify-center  flex-col items-center md:items-end "
+                  className="w-full space-y-10 md:relative right-24 md:w-[50%] md:space-y-3 flex md:justify-center  flex-col items-center md:items-end "
                 >
                   <p className="text-[#3CA7CB] font-mono text-md">
                     Featured Project
                   </p>
                   <h3 className="text-3xl text-gray-400">{project.name}</h3>
                   <div>
-                    <p className="p-10 bg-[#242f40] text-gray-400 shadow-lg border border-gray-400 rounded-lg">
+                    <p className="p-10 bg-[#242f40] text-gray-400 shadow-lg border md:text-right text-center border-gray-400 rounded-lg">
                       {project.projectInfo}
                     </p>
                   </div>

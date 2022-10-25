@@ -14,12 +14,12 @@ function About({ pageInfo }) {
       transition={{
         duration: 1.5,
       }}
-      className="flex flex-col items-center h-screen  justify-center max-w-7xl mx-auto "
+      className="flex flex-col items-center   justify-center max-w-7xl mx-auto "
     >
-      <h3 className="  uppercase tracking-[20px] text-gray-500 pt-16 md:py-10 text-2xl">
+      <h3 className="  uppercase tracking-[20px] text-gray-500 py-16 md:py-10 text-2xl">
         About
       </h3>
-      <div className="flex flex-col items-center justify-center h-screen md:space-x-8 space-y-5 md:flex-row ">
+      <div className="flex flex-col items-center justify-center  md:space-x-8 space-y-5 md:flex-row ">
         <motion.div
           initial={{
             x: -100,

@@ -48,20 +48,20 @@ function Contact({ pageInfo }) {
       transition={{
         duration: 1.5,
       }}
-      className="flex flex-col items-center   h-screen mx-auto max-w-7xl "
+      className="flex flex-col items-center mx-auto max-w-7xl "
     >
       <h3 className="uppercase tracking-[10px] text-gray-500 pt-16 md:pt-5 text-2xl">
         Contact
       </h3>
 
-      <div className="flex flex-col space-y-5 items-center py-10 px-5">
+      <div className="flex flex-col items-center px-5 py-10 space-y-5">
         <h4 className="text-4xl font-semibold text-center  text-[#3CA7CB]">
           I have got just what you need.{" "}
           <span className="underline decoration-[#3CA7CB]/50">Lets Talk.</span>
         </h4>
 
         <div className="space-y-5 text-gray-500">
-          <div className="flex items-center space-x-5 justify-center ">
+          <div className="flex items-center justify-center space-x-5 ">
             <div>
               <BsTelephoneFill className="text-[#3CA7CB] h-7 w-7 animate-pulse" />
             </div>
@@ -70,21 +70,21 @@ function Contact({ pageInfo }) {
             </a>
           </div>
 
-          <div className="flex items-center space-x-5 justify-center ">
+          <div className="flex items-center justify-center space-x-5 ">
             <FaEnvelope className="text-[#3CA7CB] h-7 w-7 animate-pulse" />
             <a href={`mailto:${pageInfo.email}`} className="text-2xl">
               {pageInfo.email}
             </a>
           </div>
 
-          <div className="flex items-center space-x-5 justify-center">
+          <div className="flex items-center justify-center space-x-5">
             <RiMapPinFill className="text-[#3CA7CB] h-7 w-7 animate-pulse" />
             <p className="text-2xl ">{pageInfo.address}</p>
           </div>
         </div>
 
         <form
-          className="flex flex-col space-y-2 w-fit mx-auto justify-center items-center"
+          className="flex flex-col items-center justify-center mx-auto space-y-2 w-fit"
           ref={form}
           onSubmit={sendEmail}
         >
@@ -132,8 +132,8 @@ function Contact({ pageInfo }) {
               Submit
             </button>
           ) : (
-            <div className="bg-green-500 rounded-xl  py-5 px-10 w-full text-center ">
-              <p className="text-white  text-2xl ">Message Successfull sent</p>
+            <div className="w-full px-10 py-5 text-center bg-green-500 rounded-xl ">
+              <p className="text-2xl text-white ">Message Successfull sent</p>
             </div>
           )}
         </form>
