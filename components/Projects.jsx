@@ -26,10 +26,10 @@ function Projects({ projects }) {
         <div className=" w-full  flex items-center overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-5 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#3CA7CB]">
           {projects.map((project, index) => (
             <div
-              className="w-full flex-shrink-0 snap-center flex  flex-col space-y-5 mx-auto   "
+              className="flex flex-col flex-shrink-0 w-full mx-auto space-y-5 snap-center "
               key={index}
             >
-              <div className="flex h-full w-full justify-center items-center p-8">
+              <div className="flex items-center justify-center w-full h-full p-8">
                 <motion.div
                   initial={{
                     opacity: 0,
@@ -62,27 +62,30 @@ function Projects({ projects }) {
                   <p className="text-[#3CA7CB] font-mono text-md">
                     Featured Project
                   </p>
+                  <p className="font-bold text-gray-400">
+                    {index + 1} / {projects.length}
+                  </p>
                   <h3 className="text-3xl text-gray-400">{project.name}</h3>
                   <div>
                     <p className="p-10 bg-[#242f40] text-gray-400 shadow-lg border md:text-right text-center border-gray-400 rounded-lg">
                       {project.projectInfo}
                     </p>
                   </div>
-                  <ul className="flex justify-end text-gray-300 space-x-3">
+                  <ul className="flex justify-end space-x-3 text-gray-300">
                     {project.projectTech.map((item, i) => (
                       <li key={i}>{item}</li>
                     ))}
                   </ul>
-                  <div className="text-3xl space-x-3 flex justify-end text-gray-300 ">
+                  <div className="flex justify-end space-x-3 text-3xl text-gray-300 ">
                     <Link href={project.gitHub}>
                       <a>
                         {" "}
-                        <FiGithub className="cursor-pointer z-20" />
+                        <FiGithub className="z-20 cursor-pointer" />
                       </a>
                     </Link>
                     <Link href={project.liveLink}>
                       <a>
-                        <FiExternalLink className="cursor-pointer z-20" />
+                        <FiExternalLink className="z-20 cursor-pointer" />
                       </a>
                     </Link>
                   </div>
