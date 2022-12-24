@@ -17,12 +17,13 @@ const projectQuery = `
     projectInfo,
     gitHub,
     liveLink,
+    _createdAt,
     projectImage {
     asset {
     _ref
   }
   }
-  }
+  } | order(_createdAt desc)
   `;
 
 const pageInfoQuery = `
