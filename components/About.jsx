@@ -14,7 +14,7 @@ function About({ pageInfo }) {
       transition={{
         duration: 1.5,
       }}
-      className="flex flex-col items-center   justify-center max-w-7xl mx-auto "
+      className="flex flex-col items-center h-[100vh]  justify-center max-w-7xl mx-auto "
     >
       <h3 className="  uppercase tracking-[20px] text-gray-500 py-16 md:py-10 text-2xl">
         About

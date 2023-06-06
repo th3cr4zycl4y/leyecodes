@@ -15,7 +15,7 @@ function About() {
       transition={{
         duration: 1.5,
       }}
-      className="flex flex-col items-center  h-full  mx-auto max-w-7xl "
+      className="flex flex-col items-center  h-[100vh] my-10 mx-auto max-w-7xl "
     >
       <h3 className="uppercase tracking-[10px] text-gray-500 py-16 md:py-10 text-2xl">
         My Skills

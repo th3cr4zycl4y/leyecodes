@@ -9,15 +9,12 @@ function Header({ handleNav, navToggle, pageInfo }) {
   return (
     <header className="sticky top-0 z-20 flex items-center justify-between max-w-7xl w-full mx-auto px-5 py-3 md:px-5 bg-[#242f40] md:bg-transparent shadow-xl md:shadow-none">
       <div className="w-[20em] h-10">
-        <Image
+        <img
           src="/images/logo.png"
-          width={300}
-          height={50}
           alt="Logo Image"
           className="rounded-full md:mb-0 md:rounded-lg object-fit w-[10rem] md:w-[15rem]  object-fit h-10 "
         />
       </div>
-
       <div
         className={
           navToggle
@@ -40,7 +37,6 @@ function Header({ handleNav, navToggle, pageInfo }) {
           <button className="heroButton text-3xl">Contact</button>
         </Link>
       </div>
-
       <div className="hidden md:block">
         {socials.map((item, i) => (
           <SocialIcon

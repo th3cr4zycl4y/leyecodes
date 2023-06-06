@@ -48,7 +48,7 @@ function Contact({ pageInfo }) {
       transition={{
         duration: 1.5,
       }}
-      className="flex flex-col items-center mx-auto max-w-7xl "
+      className="flex flex-col items-center mx-auto max-w-7xl  "
     >
       <h3 className="uppercase tracking-[10px] text-gray-500 pt-16 md:pt-5 text-2xl">
         Contact
