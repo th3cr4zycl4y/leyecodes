@@ -98,10 +98,10 @@ export default function Home({ project, pageInfo }) {
         </section>
       </main>
       <Link href="#hero">
-        <footer className="sticky flex items-center justify-center w-full cursor-pointer  bottom-5">
+        <footer className="sticky flex items-center justify-center w-full cursor-pointer bottom-5">
           <div className="w-10 h-10">
             <Image
-              className="rounded-full cursor-pointer filter grayscale hover:grayscale-0"
+              className="rounded-full cursor-pointer filter grayscale hover:grayscale-0 hover:bg-[#3CA7CB]"
               src="/images/profile.png"
               alt="Picture of the author"
               width="1"

@@ -4,13 +4,13 @@
 
 @layer base {
   body {
-    @apply bg-[#242f40];
+    @apply bg-[#1f2e3f];
   }
 }
 
 @layer components {
   .heroButton {
-    @apply px-3 mx-2 my-2 py-2 md:px-6 md:border border-[#474545] rounded-full uppercase text-sm tracking-[5px] text-[#3CA7CB]/80 transition-all hover:border-[#3CA7CB] hover:text-[#3CA7CB]/40;
+    @apply px-3 mx-2 my-2 py-2 md:px-6 md:border border-[#474545] rounded-full uppercase text-sm tracking-[5px] text-[#3CA7CB] transition-all hover:border-[#3CA7CB] hover:bg-[#3CA7CB] hover:text-[#1f2e3f] hover:font-bold;
   }
   .skillDesc {
     @apply flex flex-col items-center text-[1.1rem] justify-center  md:w-[50%];
@@ -28,4 +28,25 @@
   .contactInput {
     @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-gray-200 placeholder-gray-500 transition-all focus:border-[#3CA7CB]/40 focus:text-[#3CA7CB] hover:border-[#3CA7CB]/40 w-full;
   }
+}
+
+.slick-next,
+.slick-prev {
+  z-index: 1;
+  width: 50px !important;
+  height: 40px !important;
+}
+
+.slick-dots li button::before {
+  content: "";
+  color: red;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+  background-color: #3ca7cb !important;
+  border-radius: 10px;
 }
