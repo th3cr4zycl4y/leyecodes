@@ -29,7 +29,7 @@ function Projects({ projects }) {
         transition={{
           duration: 1.5,
         }}
-        className="text-center h-[100vh] mx-auto max-w-7xl"
+        className="text-center  h-fit mx-auto max-w-7xl "
       >
         <h3 className="uppercase tracking-[10px] text-gray-500 pt-16 md:py-10 text-2xl">
           Projects
