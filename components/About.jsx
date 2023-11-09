@@ -65,7 +65,7 @@ function About({ pageInfo }) {
             <span className="underline decoration-[#3CA7CB]/50">little</span>{" "}
             about me
           </h4>
-          <p className="text-base text-gray-400 md:text-[1.2rem]  w-full tracking-widest">
+          <p className="text-base text-gray-700 md:text-[1.2rem]  w-full tracking-widest">
             {pageInfo.Info}
           </p>
 

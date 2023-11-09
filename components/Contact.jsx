@@ -48,43 +48,49 @@ function Contact({ pageInfo }) {
       transition={{
         duration: 1.5,
       }}
-      className="flex flex-col items-center mx-auto max-w-7xl  "
+      className="flex flex-col items-center mx-auto max-w-6xl  "
     >
       <h3 className="uppercase tracking-[10px] text-gray-500 pt-16 md:pt-5 text-2xl">
         Contact
       </h3>
 
-      <div className="flex flex-col items-center px-5 py-10 space-y-5">
-        <h4 className="text-4xl font-semibold text-center  text-[#3CA7CB]">
+      <div className="flex flex-col items-center mx-5 py-10 space-y-5 ">
+        <h4 className="text-3xl md:text-4xl font-semibold text-center  text-[#3CA7CB]">
           I have got just what you need.{" "}
           <span className="underline decoration-[#3CA7CB]/50">Lets Talk.</span>
         </h4>
 
-        <div className="space-y-5 text-gray-500">
+        <div className="space-y-5 text-gray-500 ">
           <div className="flex items-center justify-center space-x-5 ">
             <div>
               <BsTelephoneFill className="text-[#3CA7CB] h-7 w-7 animate-pulse" />
             </div>
-            <a href={`tel:${pageInfo.phoneNumber}`} className="text-2xl">
+            <a
+              href={`tel:${pageInfo.phoneNumber}`}
+              className="md:text-2xl text-xl"
+            >
               {pageInfo.phoneNumber}
             </a>
           </div>
 
           <div className="flex items-center justify-center space-x-5 ">
             <FaEnvelope className="text-[#3CA7CB] h-7 w-7 animate-pulse" />
-            <a href={`mailto:${pageInfo.email}`} className="text-2xl">
+            <a
+              href={`mailto:${pageInfo.email}`}
+              className="md:text-2xl text-xl"
+            >
               {pageInfo.email}
             </a>
           </div>
 
           <div className="flex items-center justify-center space-x-5">
             <RiMapPinFill className="text-[#3CA7CB] h-7 w-7 animate-pulse" />
-            <p className="text-2xl ">{pageInfo.address}</p>
+            <p className="md:text-2xl text-xl">{pageInfo.address}</p>
           </div>
         </div>
 
         <form
-          className="flex flex-col items-center justify-center mx-auto space-y-2 w-fit"
+          className="flex flex-col items-center justify-center mx-auto space-y-2 w-full"
           ref={form}
           onSubmit={sendEmail}
         >
@@ -120,20 +126,20 @@ function Contact({ pageInfo }) {
           <textarea
             name="message"
             placeholder="Message"
-            className="contactInput"
+            className="contactInput "
             required
           />
 
           {!success ? (
             <button
               type="submit"
-              className=" bg-[#3CA7CB] py-5 px-10 rounded-md text-gray-700 font-bold text-lg hover:bg-transparent hover:border hover:border-[#3CA7CB] hover:text-white  w-full"
+              className=" bg-[#3CA7CB] py-3 px-10 rounded-md text-gray-700 font-bold text-lg hover:bg-transparent hover:border hover:border-[#3CA7CB] hover:text-white  w-full"
             >
               Submit
             </button>
           ) : (
             <div className="w-full px-10 py-5 text-center bg-green-500 rounded-xl ">
-              <p className="text-2xl text-white ">Message Successfull sent</p>
+              <p className="text-2xl text-white ">Message Successfully sent</p>
             </div>
           )}
         </form>

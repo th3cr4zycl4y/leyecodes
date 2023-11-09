@@ -52,15 +52,15 @@ asset {
 `;
 
 export default function Home({ project, pageInfo }) {
+  const [navBgColor, setBgColor] = useState(true);
   const [navToggle, setNavToggle] = useState(true);
 
   const handleNav = () => {
     setNavToggle((navToggle) => !navToggle);
-    console.log(navToggle);
   };
 
   return (
-    <div className=" h-screen overflow-scroll overflow-x-hidden scrollbar scrollbar-thumb-[#3CA7CB] scrollbar-track-gray-700 snap-y">
+    <div className=" h-screen overflow-scroll overflow-x-hidden scrollbar scrollbar-thumb-[#3CA7CB] scrollbar-track-gray-700 snap-y bg-[#d4d3d3] text-red-800">
       <Head>
         <title>
           Portfolio by Olabode Olaleye | Web developer | Ethical hacker

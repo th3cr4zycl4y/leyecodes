@@ -86,19 +86,19 @@ function Projects({ projects }) {
                         {project.projectInfo}
                       </p>
                     </div>
-                    <ul className="flex justify-end space-x-3 text-gray-300">
+                    <ul className="flex justify-end space-x-3 flex-wrap items-center text-center text-gray-700">
                       {project.projectTech.map((item, i) => (
                         <li key={i}>{item}</li>
                       ))}
                     </ul>
-                    <div className="flex justify-end space-x-3 text-3xl text-gray-300 ">
+                    <div className="flex justify-end space-x-3 text-3xl text-gray-700 ">
                       <Link href={project.gitHub}>
                         <a>
                           {" "}
                           <FiGithub className="z-20 cursor-pointer" />
                         </a>
                       </Link>
-                      <Link href={project.liveLink}>
+                      <Link href={project.liveLink} target="_blank">
                         <a>
                           <FiExternalLink className="z-20 cursor-pointer" />
                         </a>
